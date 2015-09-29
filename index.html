@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stars</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
+        <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
+        <meta name="author" content="Codrops" />
+
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="css/sliderStyle.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/quizStyle.css">
+      	<noscript>
+      		<link rel="stylesheet" type="text/css" href="css/noscript.css" />
+      	</noscript>
+   </head>
+    <body>
+        <div>
+            <div class="header">
+                <a href="http://tympanus.net/Development/FullscreenImageBlurEffect/">
+                    <!-- <strong>&laquo; Previous Demo: </strong>Fullscreen Image Blur Effect -->
+                </a>
+                <span class="right">
+                    <!-- <a href="http://barbragolba.deviantart.com/gallery/#/d40lc1t" target="_blank">Images by BarbraGolba</a>
+                    <a href="http://tympanus.net/codrops/2011/11/21/elastic-image-slideshow-with-thumbnail-preview/"> -->
+                    <!-- <strong>Back to the Codrops Article</strong> -->
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div>
+            <h1>The Universe Through hubble's eyes</h1>
+            <div class="wrapper">
+                <div id="ei-slider" class="ei-slider">
+                    <ul class="ei-slider-large">
+                        <li class="ei-slider-large-list">
+                            <img src="images/optimized/stars1-min.jpg" alt="image01" />
+                            <div class="ei-title slider-box">
+                                <div class="h2-slider slider-text">'The sky is the ultimate art gallary just above us.'</div>
+                                <div class="slider-content-text slider-text h3-slider" id="quote-byline">Ralph Waldo Emerson</div>
+                                <div class="slider-content-text slider-text" id="content-intro">For the past 25 years, the Hubble telescope has been meandering through
+                                space, capturing images that both inform and astound us. As technology advances, looking at some of the most popular photographs can remind
+                                us that there is a big universe out there, and we have only uncovered a fraction of it.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ei-slider-large-list">
+                            <img src="images/optimized/stars2-min.jpg" alt="image02" />
+                            <a href="#" class="tooltip-setup" id="tooltip1-position"><span id="tooltip1" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <a href="#" class="tooltip-setup" id="tooltip2-position"><span id="tooltip2" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <a href="#" class="tooltip-setup" id="tooltip3-position"><span id="tooltip3" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <div class="ei-title slider-box" id="slider2">
+                                <div class="h2-slider align-right">Whirlpool Galaxy</div>
+                                <div class="slider-content-text h3-slider align-left">
+                                  The galaxy M51 is well-known for its graceful appearance and is home to the many stars that abide
+                                  in the center of the galaxy and along the spiraling arms. Nearby, the small NGC 5195 galaxy drifts behind the galaxy.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ei-slider-large-list">
+                          <img src="images/optimized/stars3-min.jpg" alt="image03"/>
+                          <a href="#" class="tooltip-setup" id="tooltip4-position"><span id="tooltip4" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                          <a href="#" class="tooltip-setup" id="tooltip5-position"><span id="tooltip5" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                          <a href="#" class="tooltip-setup" id="tooltip6-position"><span id="tooltip6" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                          <div class="ei-title slider-box" id="slider3">
+                              <div class="h2-slider align-left">Orion Nebula</div>
+                              <div class="slider-content-text h3-slider align-right">
+                                This incrediable burst of color and vibrancy is created by the gases and chemicals of four large stars, the Trapezium, in close proxiity to each other.
+                                The result is the Orion Nebula, the brightest star in the hunter constellation.
+                              </div>
+                            </div>
+                        </li>
+                        <li class="ei-slider-large-list">
+                            <img src="images/optimized/stars4-min.jpg" alt="image04"/>
+                            <a href="#" class="tooltip-setup" id="tooltip7-position"><span id="tooltip7" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <a href="#" class="tooltip-setup" id="tooltip8-position"><span id="tooltip8" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <div class="ei-title slider-box" id="slider4">
+                                <div class="h2-slider align-right">The Antennae Galaxies</div>
+                                <div class="slider-content-text h3-slider align-left">
+                                  This image depicts the collision of two separate galaxies that reside approximately 62 million light years from us.  Over the years,
+                                  their interactions have produced millions of stars and numerous supernovas.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ei-slider-large-list">
+                            <img src="images/optimized/stars5-min.jpg" alt="image05"/>
+                            <a href="#" class="tooltip-setup" id="tooltip9-position"><span id="tooltip9" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <a href="#" class="tooltip-setup" id="tooltip10-position"><span id="tooltip10" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <a href="#" class="tooltip-setup" id="tooltip11-position"><span id="tooltip11" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <div class="ei-title slider-box" id="slider5">
+                              <div class="h2-slider align-left">NGC 3603</div>
+                              <div class="slider-content-text h3-slider align-right">
+                                Located in the Carina constellation, this cluster of young, bright stars has been made
+                                visible by the cavity created by ultraviolet radiation and strong stellar winds.
+                              </div>
+                            </div>
+                        </li>
+                        <li class="ei-slider-large-list">
+                            <img src="images/optimized/stars6-min.jpg" alt="image06"/>
+                            <a href="#" class="tooltip-setup" id="tooltip12-position"><span id="tooltip12" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <a href="#" class="tooltip-setup" id="tooltip13-position"><span id="tooltip13" class="tooltips"><i class="fa fa-circle-thin fa-3x tooltips"></i></span></a>
+                            <div class="ei-title slider-box" id="slider6">
+                              <div class="h2-slider align-left">Sharpless 2-106</div>
+                              <div class="slider-content-text h3-slider align-right">
+                                This breathtaking nebula, located in a distant, remote area of the Milky Way,
+                                appears almost like an angel with wings produced by gas, heat, and motion.
+                              </div>
+                            </div>
+                        </li>
+                        <li class="ei-slider-large-list">
+                          <img src="images/optimized/stars7-min.jpg" alt="image08"/>
+                			    <!--Back-up option-->
+                			    <!--<iframe src="quiz.html"></iframe>-->
+                          <div class="fixed-quiz-container">
+                            <div class="quiz-content">
+                              <div class="container-fluid">
+                                <div id="quiz"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                    </ul><!-- ei-slider-large -->
+                    <ul class="ei-slider-thumbs">
+                        <li class="ei-slider-element">Current</li>
+                        <li><a href="#">Slide 1</a><img src="images/optimized/stars1thumb-min.jpg" alt="thumb01" /></li>
+                        <li><a href="#">Slide 2</a><img src="images/optimized/stars2thumb-min.jpg" /></li>
+                        <li><a href="#">Slide 3</a><img src="images/optimized/stars3thumb-min.jpg" /></li>
+                        <li><a href="#">Slide 4</a><img src="images/optimized/stars4thumb-min.jpg" /></li>
+                        <li><a href="#">Slide 5</a><img src="images/optimized/stars5thumb-min.jpg" alt="thumb05" /></li>
+                        <li><a href="#">Slide 6</a><img src="images/optimized/stars6thumb-min.jpg" alt="thumb06" /></li>
+                        <li><a href="#">Slide 7</a><img src="images/optimized/stars7thumb-min.jpg" alt="thumb08" /></li>
+                    </ul><!-- ei-slider-thumbs -->
+                </div><!-- ei-slider -->
+                <div class="reference">
+                    <p>All images and material from this presentation are credited to NASA and STScl and are being used as public domain under Contract NAS5-26555. </p>
+                </div><br>
+            </div><!-- wrapper -->
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+        <script src="js/tabletop.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        <script src="js/initialize.js" type="text/javascript"></script>
+    </body>
+</html>
