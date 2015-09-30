@@ -1,15 +1,22 @@
 $( document ).ready(function() {
     console.log( "ready!" );
+    initializeQtips();
+    initializeSlider();
+    initializeQuiz();
 });
 
 
-// function initializeQtips() {
+function initializeQtips() {
   $('#tooltip1').qtip({ // Grab some elements to apply the tooltip to
       content: {
           text: 'The long arms of this galaxy function as star builders as hydrogen gas is compressed.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip',
+        tip: {
+            corner: 'right top',
+            mimic: 'center' // Single 'center' value here
+        }
       }
   })
   $('#tooltip2').qtip({ // Grab some elements to apply the tooltip to
@@ -17,7 +24,7 @@ $( document ).ready(function() {
           text: 'The oldest stars of the galaxy are located near the core of the spiral, while the youngest reside along the edges of the Whirlpool’s arms.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip3').qtip({ // Grab some elements to apply the tooltip to
@@ -25,7 +32,7 @@ $( document ).ready(function() {
           text: 'The close proximity of these two galaxies results in gravitational pulls pumping gaseous material into the Whirlpool’s arms and generates more star clusters.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip4').qtip({ // Grab some elements to apply the tooltip to
@@ -33,7 +40,7 @@ $( document ).ready(function() {
           text: 'The Trapezium, located here, shines about 100,000 brighter than the sun.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip5').qtip({ // Grab some elements to apply the tooltip to
@@ -41,7 +48,7 @@ $( document ).ready(function() {
           text: 'The Orion Nebula is the largest star-producer closest to us, as it is home to approximately 1,000 early stars.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip6').qtip({ // Grab some elements to apply the tooltip to
@@ -49,7 +56,7 @@ $( document ).ready(function() {
           text: 'The UV radiation from the four stars heat hydrogen and sulfur gases, creating spectacular strokes of green.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip7').qtip({ // Grab some elements to apply the tooltip to
@@ -57,7 +64,7 @@ $( document ).ready(function() {
           text: 'The bright white spots in the image are what remains of neutron stars and substances that have fallen into black holes.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip8').qtip({ // Grab some elements to apply the tooltip to
@@ -65,7 +72,7 @@ $( document ).ready(function() {
           text: 'These dust clouds have been heated by the formation of young stars, resulting in their reflecting an infrared light.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip9').qtip({ // Grab some elements to apply the tooltip to
@@ -73,7 +80,7 @@ $( document ).ready(function() {
           text: 'Though similar in age, the stars in this nebula vary greatly in other attributes such as size, temperature, and color.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip10').qtip({ // Grab some elements to apply the tooltip to
@@ -81,7 +88,7 @@ $( document ).ready(function() {
           text: 'Although they are young, stars are massive and quickly expode in supernovas.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip11').qtip({ // Grab some elements to apply the tooltip to
@@ -89,7 +96,7 @@ $( document ).ready(function() {
           text: 'Gas and dust envelop the nebula, creating an optimal environment for the creation of new stars.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip12').qtip({ // Grab some elements to apply the tooltip to
@@ -97,7 +104,7 @@ $( document ).ready(function() {
           text: 'The winged visual effect in the Sharpless is created by lobes of heated gas being produced from a large star in the center.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
   $('#tooltip13').qtip({ // Grab some elements to apply the tooltip to
@@ -105,12 +112,12 @@ $( document ).ready(function() {
           text: 'Dust and gas encircle the star at this point and constricts the nebula, giving it the appearance of an hourglass.'
       },
       style: {
-        classes: 'qtip-light qtip-rounded q-tip-font-size'
+        classes: 'qtip-light qtip-rounded q-tip-font-size customToolTip'
       }
   })
-// };
+};
 
-// function initializeSlider {
+function initializeSlider() {
   $(function() {
       $('#ei-slider').eislideshow({
         easing		: 'easeOutExpo',
@@ -118,8 +125,8 @@ $( document ).ready(function() {
         titlespeed	: 1200
       });
   });
-// };
+};
 
-// function initializeQuiz() {
+function initializeQuiz() {
   var quiz = jQuery('#quiz').quiz('12ycYFGAcUlrosuO5tRvqTU4fNCcPrzXpG84TlKruNAw');
-// };
+};
