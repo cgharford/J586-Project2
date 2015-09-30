@@ -239,9 +239,16 @@ h1 span{
   left: 40%;
 }
 
-.customToolTip {
+.custom-tool-tip-small {
 	font-size: 20px;
 	line-height: 23px;
+	width: 150px;
+}
+
+.custom-tool-tip-large {
+	font-size: 20px;
+	line-height: 23px;
+	width: 200px;
 }
 
 @media screen and (max-width: 860px) {
