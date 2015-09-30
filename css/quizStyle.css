@@ -3,6 +3,7 @@
 h3 {
     font-size: 30px;
     color: white;
+    padding: 10px 0px 10px 0px;
 }
 
 p {
@@ -41,11 +42,15 @@ p {
 }
 
 .wrong-answer {
-	background: #FF8362;
+	background: #a46f68;
 }
 
 .correct-answer {
-    background: #62DA97;
+    background: #9ac1d2;
+}
+
+div.question.show {
+  overflow: visible;
 }
 
 .selected {
@@ -81,6 +86,7 @@ p {
 .question img, .revealed_answer img, .selected img, .correct-answer img, .wrong-answer img {
     max-height: 24em;
     display: block;
+    overflow: visible;
 }
 
 .videoembed {

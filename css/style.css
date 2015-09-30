@@ -121,6 +121,10 @@ h1 span{
 	text-align: right;
 }
 
+.align-center {
+	text-align: center;
+}
+
 #slider2 {
 	margin: 0% 2% 0% 50%;
 	top: 30%;
@@ -249,6 +253,11 @@ h1 span{
 	height: 100%;
   width:100%;
   overflow: scroll;
+}
+
+#quiz-title {
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 /* Styles for responsive design */
