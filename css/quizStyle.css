@@ -1,3 +1,5 @@
+/* Custom quiz styles from Mother Jones News Quiz plugin */
+
 h3 {
     font-size: 30px;
     color: white;
@@ -66,8 +68,6 @@ p {
 }
 
 /*multimedia styling*/
-
-/*img, .youtube {*/
 .youtube {
 	margin-bottom: 1em;
 	min-height: 200px;

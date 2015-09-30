@@ -1,6 +1,6 @@
 @import url('reset.css');
 
-/* General Demo Style */
+/*  General styles */
 body{
 	background: #fff;
 	color: #000;
@@ -29,6 +29,7 @@ a:hover{
 }
 .reference p{
 	padding-top: 40px;
+	padding: 1em;
 	color: black;
 	text-align: center;
 }
@@ -49,7 +50,7 @@ h1 span{
 	text-transform: none;
 	font-size: 20px;
 }
-/* Header Style */
+/*  Header style */
 .header{
 	font-family:"Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
 	font-size: 10px;
@@ -79,28 +80,7 @@ h1 span{
 	float: right;
 }
 
-.fixed-quiz-container {
-	position: absolute;
-	top: 10%;
-	align-content: center;
-	border: solid black 1px;
-	overflow: scroll;
-	background: rgba(0,0,0,.5);
-  height: 80%;
-  width:100%;
-  padding:2em 6em 2em 6em;
-}
-
-.quiz-content {
-	height: 100%;
-  width:100%;
-  overflow: scroll;
-}
-
-.q-tip-font-size {
-	font-size: 16;
-}
-
+/* Intro slide styles */
 #content-intro {
 	color: white;
   padding: 0em 4em;
@@ -114,15 +94,8 @@ h1 span{
 	font-weight: bold;
 }
 
-.tooltip-setup {
-	position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 10px;
-  height: 10px;
-}
 
-
+/* Slider styles */
 .slider-box {
 	border: solid black 1px;
 	background: rgba(0,0,0,.5);
@@ -130,6 +103,23 @@ h1 span{
 	line-height: 30px;
 }
 
+.slider-text {
+	text-align: center;
+	line-height: 2em;
+}
+
+.slider-content-text {
+	color: white;
+	font-size: 25px;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
 
 #slider2 {
 	margin: 0% 2% 0% 50%;
@@ -156,22 +146,13 @@ h1 span{
 	top: 30%;
 }
 
-.slider-text {
-	text-align: center;
-	line-height: 2em;
-}
-
-.slider-content-text {
-	color: white;
-	font-size: 25px;
-}
-
-.align-left {
-	text-align: left;
-}
-
-.align-right {
-	text-align: right;
+/* Styles for the tooltips */
+.tooltip-setup {
+	position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 10px;
+  height: 10px;
 }
 
 #tooltip1-position {
@@ -251,6 +232,26 @@ h1 span{
 	width: 200px;
 }
 
+/* Quiz style; enables scrolling */
+.fixed-quiz-container {
+	position: absolute;
+	top: 10%;
+	align-content: center;
+	border: solid black 1px;
+	overflow: scroll;
+	background: rgba(0,0,0,.5);
+  height: 80%;
+  width:100%;
+  padding:2em 6em 2em 6em;
+}
+
+.quiz-content {
+	height: 100%;
+  width:100%;
+  overflow: scroll;
+}
+
+/* Styles for responsive design */
 @media screen and (max-width: 860px) {
 	.header a{
 		display: block;
@@ -260,9 +261,6 @@ h1 span{
 	}
 	.header span.right{
 		float: none;
-	}
-	.fixed-quiz-container {
-		padding:1em 1em 1em 1em;
 	}
 	#content-intro {
 		padding: 0em 1em;
@@ -275,5 +273,8 @@ h1 span{
 	#slider2, #slider3, #slider4, #slider5, #slider6, #slider7 {
 		margin: 0%;
 		top: 65%;
+	}
+	.fixed-quiz-container {
+		padding:1em 1em 1em 1em;
 	}
 }

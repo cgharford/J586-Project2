@@ -1,3 +1,5 @@
+/* Custom slider styles from Elastic Images slider plugin */
+
 .ei-slider{
 	position: relative;
 	width: 100%;
@@ -138,11 +140,10 @@
 }
 
 .tooltips {
-	/*right: 10%;
-	top: 20%;*/
 	color: white;
 }
 
+/* Styles to make slider responsive */
 @media screen and (min-width: 421px) {
 	.ei-title{
 		margin: 0% 5% 0% 5%;
@@ -170,7 +171,6 @@
 
 @media screen and (max-width: 420px) {
 	.ei-title{
-		/*margin: 0% 2% 0% 2%;*/
 		top: 5%;
 	}
 }
