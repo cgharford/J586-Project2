@@ -41,7 +41,7 @@ function initializeQtips() {
   })
   $('#tooltip4').qtip({
       content: {
-          text: 'The Trapezium, located here, shines about 100,000 brighter than the sun.'
+          text: 'The Trapezium, located here, radiates about 100,000 brighter than the sun.'
       },
       style: {
         classes: 'qtip-light qtip-rounded custom-tool-tip-small'

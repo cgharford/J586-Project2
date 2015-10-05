@@ -1,4 +1,4 @@
-
+// More javascript for the newsquiz
 (function($) {
 
     function score (nCorrect, nQuestions) {
