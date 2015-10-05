@@ -261,13 +261,6 @@ h1 span{
 	padding-bottom: 10px;
 }
 
-#myElement {
-  background: silver;
-  height: 300px;
-  text-align: center;
-  font: 30px/300px Helvetica, Arial, sans-serif;
-}
-
 /* Styles for responsive design */
 @media screen and (max-width: 860px) {
 	.header a{

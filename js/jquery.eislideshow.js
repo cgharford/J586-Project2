@@ -40,6 +40,7 @@
 
 	$.Slideshow 				= function( options, element ) {
 
+		var options;
 		this.$el			= $( element );
 
 		/***** images ****/
@@ -96,6 +97,7 @@
 		_init 				: function( options ) {
 
 			this.options 		= $.extend( true, {}, $.Slideshow.defaults, options );
+			options = this.options;
 
 			// set the opacity of the title elements and the image items
 			this.$imgItems.css( 'opacity', 1 );
@@ -103,6 +105,7 @@
 
 			// index of current visible slider
 			this.current		= 0;
+			currentSlide = 0;
 
 			var _self			= this;
 
@@ -250,6 +253,8 @@
 				var pos;
 
 				( _self.current === _self.itemsCount - 1 ) ? pos = 0 : pos = _self.current + 1;
+				console.log("pos: " + pos);
+
 
 				_self._slideTo( pos );
 
@@ -264,7 +269,6 @@
 		},
 		// shows the clicked thumb's slide
 		_slideTo			: function( pos ) {
-
 			// return if clicking the same element or if currently animating
 			if( pos === this.current || this.isAnimating )
 				return false;
