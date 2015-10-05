@@ -32,6 +32,7 @@ a:hover{
 	padding: 1em;
 	color: black;
 	text-align: center;
+	font-size: 20px;
 }
 h1{
 	font-size: 34px;
@@ -89,7 +90,7 @@ h1 span{
 }
 
 #quote-byline {
-	color: black;
+	color: #c1a487;
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -260,6 +261,13 @@ h1 span{
 	padding-bottom: 10px;
 }
 
+#myElement {
+  background: silver;
+  height: 300px;
+  text-align: center;
+  font: 30px/300px Helvetica, Arial, sans-serif;
+}
+
 /* Styles for responsive design */
 @media screen and (max-width: 860px) {
 	.header a{
@@ -275,6 +283,9 @@ h1 span{
 		padding: 0em 1em;
     font-size: 150%;
 	}
+	#quote-byline {
+		font-size: 20px;
+	}
 	.slider-content-text {
 		font-size: 15px;
 		line-height: 30px;
@@ -285,5 +296,9 @@ h1 span{
 	}
 	.fixed-quiz-container {
 		padding:1em 1em 1em 1em;
+	}
+	.reference p{
+		font-size: 15px;
+		line-height: 20px;
 	}
 }
